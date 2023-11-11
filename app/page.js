@@ -97,7 +97,7 @@ if (batsman === "Data Not Found") {
         </div>
         <p className="text-lg text-gray-600 mt-4">Run Rate: {runrate}</p>
         <p className="text-lg text-gray-600">Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
-        <p className="text-lg text-gray-600 mt-4">{commentary}</p>
+        <p className="text-lg text-gray-600 mt-4"></p>
       </div>
     </div>
   )
