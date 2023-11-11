@@ -86,17 +86,16 @@ if (batsman === "Data Not Found") {
       <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
       <h1 className="text-2xl">{title}</h1>
       <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
-  
     
     <hr className="border-gray-300 my-4" />
-    <div className="text-center">
+    
         <div className="bg-blue-500 rounded-lg p-6">
-          <p className="text-4xl font-bold mb-4">{score}</p>
-          <p>CRR: {runrate}</p>
-          <p className="text-lg">{update}</p>
+          <p className="text-4xl font-bold mb-4 text-center">{score}</p>
+         
+          <p className="text-lg text-center">{update}</p>
         </div>
     <div>
-    <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}</p> </marquee> 
+    <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}   |    CRR: {runrate}</p> </marquee> 
     </div>
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div>
