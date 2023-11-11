@@ -93,7 +93,8 @@ export default function Index2() {
         <br /> {"📉 " + runrate}
 
 
-{"Recentballs" + recentballs + "Last Wicket" + lastwicket + "Partnership" + partnership + "Commentary" + commentary}
+{"Recentballs" + recentballs + "Last Wicket" + lastwicket + "Partnership" + partnership }
+<p style="font-size: 2px;"> {commentary}</p>
       </p>
     )
   }
