@@ -96,7 +96,7 @@ if (batsman === "Data Not Found") {
           <p className="text-lg">{update}</p>
         </div>
     <div>
-    <marquee> <p>Partnership: {partnership}   Last Wicket: {lastwicket}</p> </marquee> 
+    <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}</p> </marquee> 
     </div>
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div>
@@ -113,13 +113,12 @@ if (batsman === "Data Not Found") {
             
           </div>
         </div>
+      <p className="bg-blue-100 rounded-lg p-4 text-black">Recent Balls: {recentballs}</p>
     
       </div>
     </div>
   
-    <div className="bg-blue-100 rounded-lg p-4 text-black">
-      <p>Recent Balls: {recentballs}</p>
-    </div>
+    
   )
 }
 
