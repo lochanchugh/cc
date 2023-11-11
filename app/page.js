@@ -89,16 +89,18 @@ if (batsman === "Data Not Found") {
           <p>CRR: {runrate}</p>
           <p className="text-lg">{update}</p>
         </div>
+    <div>
+    <marquee> <p>Partnership: {partnership}   Last Wicket: {lastwicket}</p> </marquee> </div>
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div>
-            <p>Partnership: {partnership}</p>
+           
             <p>{batsman}</p>
             <p>{batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
             <p>{batsmantwo}</p>
             <p>{batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
           </div>
           <div>
-            <p>Last Wicket: {lastwicket}</p>
+           
             <p>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
             <p>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
             
