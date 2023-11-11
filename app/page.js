@@ -90,8 +90,9 @@ if (batsman === "Data Not Found") {
       <div>
         <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
       </div>
-    </div>
+    
     <hr className="border-gray-300 my-4" />
+    </div>
     <br/>
     
         <div className="bg-blue-500 rounded-lg p-6">
