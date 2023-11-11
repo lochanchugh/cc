@@ -77,29 +77,42 @@ if (batsman === "Data Not Found") {
   Displayscore = (
     <div className="text-center">
       <h1 className="text-4xl text-white mb-2">{title}</h1>
-      <p className="text-lg text-gray-300">{update}</p>
+      <p className="text-lg text-blue-500 mb-4">{update}</p>
     </div>
-  );
+  )
 } else {
   Displayscore = (
-    <div className="text-center grid grid-cols-2 gap-4">
-      <div className="text-lg text-white bg-green-100 dark:bg-green-800 rounded-lg border border-green-500 p-4">
-        <p>{batsman} - {batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
-        <p>{batsmantwo} - {batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
-        <p>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
-        <p>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
-        <p className="mt-4">Run Rate: {runrate}</p>
-        <p>Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
+    <div className="grid grid-cols-2 gap-4 text-white">
+      <div className="flex items-center gap-4">
+        <img src="flag_image_url" alt="Country Flag" className="w-16 h-16" />
+        <h1 className="text-2xl">{title}</h1>
+        <img src="flag_image_url" alt="Country Flag" className="w-16 h-16" />
       </div>
-      <div className="text-lg text-white bg-white dark:bg-gray-700 rounded-lg border border-blue-500 p-4">
-        <p>{score}</p>
-        <p>{update}</p>
-        
+      <hr className="border-gray-300 my-4" />
+      <div className="text-center">
+        <div className="bg-blue-100 rounded-lg p-6">
+          <p className="text-4xl font-bold mb-4">{score}</p>
+          <p>CRR: {runrate}</p>
+          <p className="text-lg">{update}</p>
+        </div>
+        <div className="grid grid-cols-2 gap-4 mt-4">
+          <div>
+            <p>{batsman}</p>
+            <p>{batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
+            <p>{batsmantwo}</p>
+            <p>{batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
+          </div>
+          <div>
+            <p>Last Wicket: {lastwicket}</p>
+            <p>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
+            <p>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
+            <p>Partnership: {partnership}</p>
+          </div>
+        </div>
       </div>
     </div>
   )
 }
-
 
 let Displaybutton
   if (batsman === "Data Not Found") {
@@ -125,14 +138,18 @@ setInterval(function(){
 
 
 return (
-  <div className="min-h-screen bg-blue-200 dark:bg-blue-800 flex justify-center items-center">
-    <div className="bg-white dark:bg-gray-700 rounded-lg border border-green-500 p-6">
-      <div className="grid grid-cols-1 gap-4">
-        <div className="bg-green-100 dark:bg-green-800 rounded-lg border border-green-500 p-4">
-          {Displayscore}
-        </div>
-       
-      </div>
+  <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-4">
+    <div className="flex items-center justify-between">
+      <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
+      <h1 className="text-2xl">{title}</h1>
+      <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
+    </div>
+    <hr className="border-gray-300 my-4" />
+    <div className="bg-blue-100 rounded-lg p-6 text-center">
+      {Displayscore}
+    </div>
+    <div className="bg-blue-100 rounded-lg p-4 text-white">
+      <p>Recent Balls: {recentballs}</p>
     </div>
   </div>
 )
