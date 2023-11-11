@@ -73,31 +73,31 @@ export default function Index2() {
     setUpdate(data.update)
   }
   let Displayscore
-  if (batsman === "Data Not Found") {
+if (batsman === "Data Not Found") {
   Displayscore = (
-    <div style={{ textAlign: 'center' }}>
-      <h1 style={{ fontSize: '24px', color: '#333', marginBottom: '10px' }}>{title}</h1>
-      <p style={{ fontSize: '16px', color: '#666' }}>{update}</p>
+    <div className="text-center">
+      <h1 className="text-4xl text-gray-800 mb-4">{title}</h1>
+      <p className="text-lg text-gray-600">{update}</p>
     </div>
   )
 } else {
   Displayscore = (
-    <div style={{ textAlign: 'center' }}>
-      <h1 style={{ fontSize: '24px', color: '#333', marginBottom: '10px' }}>{title}</h1>
-      <p style={{ fontSize: '16px', color: '#666' }}>{update}</p>
-      <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
-        <p style={{ fontSize: '18px', color: '#000', marginBottom: '5px' }}>{score}</p>
-        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '16px', color: '#444' }}>
-          <div style={{ flex: 1 }}>{batsman} - {batsmanrun} ({fours}, {sixes}) - SR: {sr}</div>
-          <div style={{ flex: 1 }}>{batsmantwo} - {batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</div>
+    <div className="text-center">
+      <h1 className="text-4xl text-gray-800 mb-4">{title}</h1>
+      <p className="text-lg text-gray-600">{update}</p>
+      <div className="mt-8 grid grid-cols-2 gap-4">
+        <p className="text-2xl text-black">{score}</p>
+        <div className="grid grid-cols-2 gap-4">
+          <p className="text-lg text-gray-700">{batsman} - {batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
+          <p className="text-lg text-gray-700">{batsmantwo} - {batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '16px', color: '#444', marginTop: '10px' }}>
-          <div style={{ flex: 1 }}>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</div>
-          <div style={{ flex: 1 }}>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</div>
+        <div className="grid grid-cols-2 gap-4">
+          <p className="text-lg text-gray-700">{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
+          <p className="text-lg text-gray-700">{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
         </div>
-        <p style={{ fontSize: '16px', color: '#666', marginTop: '10px' }}>Run Rate: {runrate}</p>
-        <p style={{ fontSize: '16px', color: '#666', marginTop: '10px' }}>Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
-        <p style={{ fontSize: '16px', color: '#666', marginTop: '10px' }}>{commentary}</p>
+        <p className="text-lg text-gray-600 mt-4">Run Rate: {runrate}</p>
+        <p className="text-lg text-gray-600">Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
+        <p className="text-lg text-gray-600 mt-4">{commentary}</p>
       </div>
     </div>
   )
