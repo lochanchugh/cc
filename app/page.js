@@ -94,7 +94,9 @@ export default function Index2() {
 
 
 {"Recentballs" + recentballs + "Last Wicket" + lastwicket + "Partnership" + partnership }
-<p style="font-size: 2px;"> {commentary}</p>
+<p className="text-[2px]">
+
+ {commentary}</p>
       </p>
     )
   }
