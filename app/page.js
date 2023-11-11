@@ -82,6 +82,13 @@ if (batsman === "Data Not Found") {
   )
 } else {
   Displayscore = (
+    <div className="flex items-center justify-between">
+      <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
+      <h1 className="text-2xl">{title}</h1>
+      <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
+    </div>
+    <hr className="border-gray-300 my-4" />
+    
     <div className="flex items-center justify-between gap-4 p-4">
       <div className="text-center">
         <div className="bg-blue-500 rounded-lg p-6">
@@ -106,6 +113,10 @@ if (batsman === "Data Not Found") {
             
           </div>
         </div>
+    
+    <div className="bg-blue-100 rounded-lg p-4 text-black">
+      <p>Recent Balls: {recentballs}</p>
+    </div>
       </div>
     </div>
   )
@@ -136,17 +147,9 @@ setInterval(function(){
 
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-4">
-    <div className="flex items-center justify-between">
-      <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
-      <h1 className="text-2xl">{title}</h1>
-      <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
-    </div>
-    <hr className="border-gray-300 my-4" />
+    
     <div className="bg-blue-100 rounded-lg p-6 text-center">
       {Displayscore}
-    </div>
-    <div className="bg-blue-100 rounded-lg p-4 text-black">
-      <p>Recent Balls: {recentballs}</p>
     </div>
   </div>
 )
