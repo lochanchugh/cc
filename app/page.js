@@ -144,7 +144,7 @@ let Displaybutton
 
 setInterval(function(){
   fetchWord();
-}, 150);
+}, 1050);
 
 
 return (
