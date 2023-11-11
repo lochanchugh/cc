@@ -74,48 +74,36 @@ export default function Index2() {
   }
   let Displayscore
   if (batsman === "Data Not Found") {
-    Displayscore = (
-      <p className="text-gray-800 dark:text-gray-100 text-sm">
-       <h1> {"🏏 " + title}</h1>
-        <br /> <br />
-        {"📊 " + update}
-      </p>
-    )
-  } else {
-    Displayscore = (
-      <p className="text-gray-800 dark:text-gray-100 text-sm">
-       <h1> {"🏏 " + title} </h1>
-        <br />
-        <br /> {"📊 " + update}
-        <br />
-        <br /> {"🔴 " + score}
-        <br />
-        <br /> {"🏏 " + batsman} {batsmanrun} {"fours" + fours + "sixes" + sixes + "strike rate" + sr}
-<br />
-<br />{batsmantwo} {batsmantworun} {"fours" + batsmantwofours + "sixes" + batsmantwosixes + "strike rate" + batsmantwosr}
-        <br />
-        <br />{" "}
-        {"🥎 " +
-          bowler +
-          "\t" +
-          bowlerover +
-          " over " +
-          bowlerruns +
-          " Runs and " +
-          bowlerwickets +
-          " wicket"}
-        <br />
-        <br /> {"📉 " + runrate}
+  Displayscore = (
+    <div style={{ textAlign: 'center' }}>
+      <h1 style={{ fontSize: '24px', color: '#333', marginBottom: '10px' }}>{title}</h1>
+      <p style={{ fontSize: '16px', color: '#666' }}>{update}</p>
+    </div>
+  )
+} else {
+  Displayscore = (
+    <div style={{ textAlign: 'center' }}>
+      <h1 style={{ fontSize: '24px', color: '#333', marginBottom: '10px' }}>{title}</h1>
+      <p style={{ fontSize: '16px', color: '#666' }}>{update}</p>
+      <div style={{ display: 'flex', flexDirection: 'column', marginTop: '20px' }}>
+        <p style={{ fontSize: '18px', color: '#000', marginBottom: '5px' }}>{score}</p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '16px', color: '#444' }}>
+          <div style={{ flex: 1 }}>{batsman} - {batsmanrun} ({fours}, {sixes}) - SR: {sr}</div>
+          <div style={{ flex: 1 }}>{batsmantwo} - {batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</div>
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '16px', color: '#444', marginTop: '10px' }}>
+          <div style={{ flex: 1 }}>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</div>
+          <div style={{ flex: 1 }}>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</div>
+        </div>
+        <p style={{ fontSize: '16px', color: '#666', marginTop: '10px' }}>Run Rate: {runrate}</p>
+        <p style={{ fontSize: '16px', color: '#666', marginTop: '10px' }}>Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
+        <p style={{ fontSize: '16px', color: '#666', marginTop: '10px' }}>{commentary}</p>
+      </div>
+    </div>
+  )
+}
 
-
-{"Recentballs" + recentballs + "Last Wicket" + lastwicket + "Partnership" + partnership }
-<p className="text-[2px]">
-
- {commentary}</p>
-      </p>
-    )
-  }
-  let Displaybutton
+let Displaybutton
   if (batsman === "Data Not Found") {
     Displaybutton = ""
   } else {
