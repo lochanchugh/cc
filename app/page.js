@@ -86,10 +86,10 @@ if (batsman === "Data Not Found") {
     <h1 className="text-xl">{title}</h1>
   <hr className="border-gray-300 my-4" />
     
-        <div className="bg-blue-500 rounded-lg pl-26 pr-26 pt-4 pb-4 mb-3">
-          <p className="text-4xl text-white font-bold text-left">{score}</p>
+        <div className="bg-blue-500 rounded-lg pl-4 pr-4 pt-4 pb-4 mb-3">
+          <p className="text-4xl text-white font-bold text-center">{score}</p>
          
-          <p className="text-lg text-left">{update}</p>
+          <p className="text-lg text-center">{update}</p>
         </div>
     
     <div>
@@ -100,17 +100,17 @@ if (batsman === "Data Not Found") {
         <div className="grid grid-cols-2 gap-0 mt-3 border border-blue-500">
           <div className="text-left pr-16 py-4 pl-4 border-2 border-blue-500">
            
-            <p>{"🏏 " + batsman} {batsmanrun}</p>
-            <p>SR: {sr} ({fours} 4s, {sixes} 6s) </p>
-            <p>{batsmantwo} {batsmantworun}</p>
-            <p>SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
+            <p>{"🏏 " + batsman} {batsmanrun} SR: {sr} ({fours} 4s, {sixes} 6s) </p>
+            <p></p>
+            <p>{batsmantwo} {batsmantworun} SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
+            <p>{"🔴 " + bowler} {bowlerover}ov  {bowlerruns}/{bowlerwickets} -  M: {bowlermaiden}</p>
+            <p></p>
           </div>
           <div className="text-left pr-16 py-4 pr-4 border-l-0 border-t-2 border-b-2 border-r-2  border-blue-500">
            
-            <p>{"🔴 " + bowler} </p>
-            <p>{bowlerover}ov  {bowlerruns}/{bowlerwickets} -  M: {bowlermaiden}</p>
-            <p>{bowlertwo}</p>
-            <p>{bowletworover}ov {bowlertworuns}/{bowlertwowickets} - M: {bowlertwomaiden} </p>
+            <p></p>
+            <p></p>
+            <p></p>
             
           </div>
         </div>
