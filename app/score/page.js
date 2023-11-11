@@ -45,11 +45,6 @@ export default function Score() {
     fetchWord()
     // eslint-disable-next-line react-hooks/exhaustive-deps
 
-      // Refresh the score every 10 seconds
-  const interval = setInterval(fetchData, 10000);
-
-  // Return a cleanup function to clear the interval when the component unmounts
-  return () => clearInterval(interval);
   }, [])
   let Displayscore
   if (batsman === "Data Not Found") {
