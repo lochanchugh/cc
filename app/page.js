@@ -19,7 +19,9 @@ export default function Index2() {
     setTitle(data.title)
     setScore(data.current)
     setBatsman(data.batsman)
+    setBatsmantwo(data.batsmantwo)
     setBatsmanrun(data.batsmanrun)
+    setBatsmantworun(data.batsmantworun)
     setBowler(data.bowler)
     setBowlerover(data.bowlerover)
     setBowlerruns(data.bowlerruns)
@@ -45,7 +47,8 @@ export default function Index2() {
         <br />
         <br /> {"🔴 " + score}
         <br />
-        <br /> {"🏏 " + batsman} {batsmanrun}
+        <br /> {"🏏 *" + batsman} {batsmanrun}
+{"    "}{"🏏 " + batsmantwo} {batsmantworun}
         <br />
         <br />{" "}
         {"🥎 " +
@@ -82,7 +85,7 @@ export default function Index2() {
 
 setInterval(function(){
     location.reload();
-}, 1000);
+}, 300);
 
 
   return (
