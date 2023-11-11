@@ -83,19 +83,9 @@ if (batsman === "Data Not Found") {
 } else {
   Displayscore = (
     <div className="flex flex-col items-center justify-between p-4">
-      <div>
-        <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
-      </div>
-      <h1 className="text-2xl">{title}</h1>
-      <div>
-        <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
-      </div>
-    
-    <hr className="border-gray-300 my-4" />
-     <br/>
-    </div>
-   
-    
+    <h1 className="text-2xl">{title}</h1>
+  <hr className="border-gray-300 my-4" />
+    <br />
         <div className="bg-blue-500 rounded-lg p-6">
           <p className="text-4xl font-bold mb-4 text-center">{score}</p>
          
@@ -126,7 +116,7 @@ if (batsman === "Data Not Found") {
       <p className="bg-blue-100 rounded-lg p-4 text-black">Recent Balls: {recentballs}</p>
     
       </div>
-    
+    </div>
   
     
   )
