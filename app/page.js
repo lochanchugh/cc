@@ -86,8 +86,8 @@ if (batsman === "Data Not Found") {
     <h1 className="text-2xl">{title}</h1>
   <hr className="border-gray-300 my-4" />
     
-        <div className="bg-blue-500 rounded-lg p-6">
-          <p className="text-4xl font-bold mb-8 text-center">{score}</p>
+        <div className="bg-blue-500 rounded-lg pl-16 pr-16">
+          <p className="text-4xl font-bold text-center">{score}</p>
          
           <p className="text-lg text-center">{update}</p>
         </div>
@@ -97,7 +97,7 @@ if (batsman === "Data Not Found") {
     <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}   |    {runrate}</p> </marquee> 
     </div>
     
-        <div className="grid grid-cols-2 gap-6 mt-4">
+        <div className="grid grid-cols-2 gap-10 mt-4">
           <div className="text-left">
            
             <p>{batsman} {batsmanrun}</p>
@@ -105,7 +105,7 @@ if (batsman === "Data Not Found") {
             <p>{batsmantwo} {batsmantworun}</p>
             <p>SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
           </div>
-          <div className="text-left">
+          <div className="text-right">
            
             <p>{bowler} {bowlerover}</p>
             <p>{bowlerruns}/{bowlerwickets} -  Maiden: {bowlermaiden}</p>
