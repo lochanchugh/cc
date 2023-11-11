@@ -98,14 +98,14 @@ if (batsman === "Data Not Found") {
     </div>
     
         <div className="grid grid-cols-2 gap-0 mt-3 border border-blue-500">
-          <div className="text-left pr-16 py-4 pl-4 border-r">
+          <div className="text-left pr-16 py-4 pl-4 border-r border-blue-500">
            
             <p>{batsman} {batsmanrun}</p>
             <p>SR: {sr} ({fours} 4s, {sixes} 6s) </p>
             <p>{batsmantwo} {batsmantworun}</p>
             <p>SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
           </div>
-          <div className="text-right pl-16 py-4 pl-4 border-l">
+          <div className="text-right pl-16 py-4 pr-4 border-l border-blue-500">
            
             <p>{bowler} </p>
             <p>{bowlerover}ov  {bowlerruns}/{bowlerwickets} -  M: {bowlermaiden}</p>
@@ -115,7 +115,7 @@ if (batsman === "Data Not Found") {
           </div>
         </div>
     
-      <p className="bg-blue-100 rounded-lg p-4 text-black">Recent Balls: {recentballs}</p>
+      <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
     
       </div>
   
