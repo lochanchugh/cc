@@ -21,6 +21,14 @@ export default function Index2() {
   const [bowlerruns, setBowlerruns] = useState("")
   const [bowlerover, setBowlerover] = useState("")
   const [bowlerwickets, setBowlerwickets] = useState("")
+  const [bowlermaiden, setBowlermaiden] = useState("")
+  
+  const [bowlertwo, setBowlertwo] = useState("")
+  const [bowlertworuns, setBowlertworuns] = useState("")
+  const [bowletworover, setBowletworover] = useState("")
+  const [bowlertwowickets, setBowlertwowickets] = useState("")
+  const [bowlertwomaiden, setBowlertwomaiden] = useState("")
+  
 
   const [recentballs, setRecentballs] = useState("")
   const [lastwicket, setLastwicket] = useState("")
@@ -49,6 +57,13 @@ export default function Index2() {
     setBowlerover(data.bowlerover)
     setBowlerruns(data.bowlerruns)
     setBowlerwickets(data.bowlerwickets)
+    setBowlermaiden(data.bowlermaiden)
+    
+    setBowlertwo(data.bowlertwo)
+    setBowletworover(data.bowletworover)
+    setBowlertworuns(data.bowlertworuns)
+    setBowlertwowickets(data.bowlertwowickets)
+    setBowlertwomaiden(data.bowlertwomaiden)
 
     setRecentballs(data.recentballs)
     setLastwicket(data.lastwicket)
@@ -110,7 +125,7 @@ export default function Index2() {
         type="button"
         onClick={() => fetchWord()}
       >
-        Refresh ▶
+        //Refresh ▶
       </button>
     )
   }
