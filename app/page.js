@@ -7,6 +7,10 @@ export default function Index2() {
   const [score, setScore] = useState("Live Score Data...")
   const [batsman, setBatsman] = useState("Batsman Data...")
   const [batsmanrun, setBatsmanrun] = useState("")
+  
+  const [batsmantwo, setBatsmantwo] = useState("Batsman Data...")
+  const [batsmantworun, setBatsmantworun] = useState("")
+  
   const [bowler, setBowler] = useState("")
   const [bowlerruns, setBowlerruns] = useState("")
   const [bowlerover, setBowlerover] = useState("")
