@@ -98,3 +98,7 @@ export default function Index2() {
     </div>
   )
 }
+// Refresh the page every 5 minutes (300,000 milliseconds)
+setInterval(function(){
+    location.reload();
+}, 300000);
