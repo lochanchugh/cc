@@ -126,21 +126,15 @@ setInterval(function(){
 }, 150);
 
 
-  return (
-    <div className="min-h-screen bg-current dark:bg-current">
-      <div className="container mx-auto px-4">
-        <div className="flex h-screen flex-col justify-center items-center">
-          <div className="dark:bg-pink-200 dark:border-pink-200 bg-pink-200 rounded-2xl border shadow-xl p-10 max-w-lg mt-6">
-            <div className="w-full flex flex-col justify-between dark:bg-gray-800 bg-blue-300 dark:border-gray-700 rounded-lg border border-blue-400 mb-6 py-5 px-4">
-              {Displayscore}
-            </div>
-            <div className="flex items-center justify-center">
-              &nbsp;
-              {Displaybutton}
-            </div>
-          </div>
-        </div>
-      </div>
+ return (
+  <div className="min-h-screen bg-current dark:bg-current flex justify-center items-center">
+    <div className="dark:bg-gray-800 bg-blue-300 rounded-lg border border-blue-400 p-6">
+      {Displayscore}
     </div>
-  )
+    <div className="flex items-center justify-center mt-4">
+      {Displaybutton}
+    </div>
+  </div>
+)
+
 }
