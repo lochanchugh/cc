@@ -82,7 +82,7 @@ export default function Index2() {
 
 setInterval(function(){
     location.reload();
-}, 100);
+}, 1000);
 
 
   return (
