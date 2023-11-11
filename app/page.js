@@ -82,7 +82,7 @@ if (batsman === "Data Not Found") {
   )
 } else {
   Displayscore = (
-    <div className="flex items-center justify-between">
+    <div className="flex flex-col items-center justify-between p-4">
       <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
       <h1 className="text-2xl">{title}</h1>
       <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
