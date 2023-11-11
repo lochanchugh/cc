@@ -85,8 +85,8 @@ if (batsman === "Data Not Found") {
     <div className="flex flex-col items-center justify-between p-4">
     <h1 className="text-2xl">{title}</h1>
   <hr className="border-gray-300 my-4" />
-    <br />
-        <div className="bg-blue-500 rounded-lg p-6">
+    
+        <div className="bg-blue-500 rounded-lg p-6 divide-x-[650px]">
           <p className="text-4xl font-bold mb-4 text-center">{score}</p>
          
           <p className="text-lg text-center">{update}</p>
@@ -98,17 +98,19 @@ if (batsman === "Data Not Found") {
     </div>
     
         <div className="grid grid-cols-2 gap-4 mt-4">
-          <div>
+          <div className="text-left">
            
             <p>{batsman}</p>
-            <p>{batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
+            <p>{batsmanrun} - SR: {sr} ({fours} 4s, {sixes} 6s) </p>
             <p>{batsmantwo}</p>
-            <p>{batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
+            <p>{batsmantworun} - SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
           </div>
-          <div>
+          <div className="text-left">
            
-            <p>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
-            <p>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
+            <p>{bowler}</p>
+            <p>{bowlerover} - {bowlerruns}/{bowlerwickets}</p>
+            <p>{bowlertwo}</p>
+            <p>{bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
             
           </div>
         </div>
