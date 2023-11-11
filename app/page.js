@@ -86,8 +86,8 @@ if (batsman === "Data Not Found") {
     <h1 className="text-2xl">{title}</h1>
   <hr className="border-gray-300 my-4" />
     
-        <div className="bg-blue-500 rounded-lg p-6 divide-x-[650px]">
-          <p className="text-4xl font-bold mb-4 text-center">{score}</p>
+        <div className="bg-blue-500 rounded-lg p-6">
+          <p className="text-4xl font-bold mb-8 text-center">{score}</p>
          
           <p className="text-lg text-center">{update}</p>
         </div>
@@ -97,20 +97,20 @@ if (batsman === "Data Not Found") {
     <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}   |    {runrate}</p> </marquee> 
     </div>
     
-        <div className="grid grid-cols-2 gap-4 mt-4">
+        <div className="grid grid-cols-2 gap-6 mt-4">
           <div className="text-left">
            
-            <p>{batsman}</p>
-            <p>{batsmanrun} - SR: {sr} ({fours} 4s, {sixes} 6s) </p>
-            <p>{batsmantwo}</p>
-            <p>{batsmantworun} - SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
+            <p>{batsman} {batsmanrun}</p>
+            <p>SR: {sr} ({fours} 4s, {sixes} 6s) </p>
+            <p>{batsmantwo} {batsmantworun}</p>
+            <p>SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
           </div>
           <div className="text-left">
            
-            <p>{bowler}</p>
-            <p>{bowlerover} - {bowlerruns}/{bowlerwickets}</p>
-            <p>{bowlertwo}</p>
-            <p>{bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
+            <p>{bowler} {bowlerover}</p>
+            <p>{bowlerruns}/{bowlerwickets} -  Maiden: {bowlermaiden}</p>
+            <p>{bowlertwo} {bowletworover}</p>
+            <p>{bowlertworuns}/{bowlertwowickets} - Mainden: {bowlertwomaiden} </p>
             
           </div>
         </div>
