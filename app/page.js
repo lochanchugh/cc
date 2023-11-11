@@ -126,15 +126,19 @@ setInterval(function(){
 }, 150);
 
 
- return (
+
+return (
   <div className="min-h-screen bg-current dark:bg-current flex justify-center items-center">
-    <div className="dark:bg-gray-800 bg-blue-300 rounded-lg border border-blue-400 p-6">
-      {Displayscore}
-    </div>
-    <div className="flex items-center justify-center mt-4">
-      {Displaybutton}
+    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg border border-blue-400 p-6">
+      <div className="grid grid-cols-1 gap-4">
+        <div className="bg-white dark:bg-gray-700 rounded-lg border border-blue-400 p-4">
+          {Displayscore}
+        </div>
+        <div className="bg-white dark:bg-gray-700 rounded-lg border border-blue-400 p-4">
+          {Displaybutton}
+        </div>
+      </div>
     </div>
   </div>
 )
-
 }
