@@ -86,8 +86,9 @@ if (batsman === "Data Not Found") {
       <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
       <h1 className="text-2xl">{title}</h1>
       <img src="country_flag_url" alt="Country Flag" className="w-16 h-16" />
-    </div>
+    
     <hr className="border-gray-300 my-4" />
+    </div>
     
     <div className="flex items-center justify-between gap-4 p-4">
       <div className="text-center">
