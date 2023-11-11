@@ -82,7 +82,6 @@ if (batsman === "Data Not Found") {
   )
 } else {
   Displayscore = (
-    <div className="grid grid-cols-2 gap-4 text-white">
       <div className="flex items-center gap-4">
         <img src="flag_image_url" alt="Country Flag" className="w-16 h-16" />
         <h1 className="text-2xl">{title}</h1>
@@ -96,6 +95,7 @@ if (batsman === "Data Not Found") {
         </div>
         <div className="grid grid-cols-2 gap-4 mt-4">
           <div>
+            <p>Partnership: {partnership}</p>
             <p>{batsman}</p>
             <p>{batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
             <p>{batsmantwo}</p>
@@ -105,7 +105,7 @@ if (batsman === "Data Not Found") {
             <p>Last Wicket: {lastwicket}</p>
             <p>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
             <p>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
-            <p>Partnership: {partnership}</p>
+            
           </div>
         </div>
       </div>
