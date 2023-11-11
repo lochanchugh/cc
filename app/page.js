@@ -113,7 +113,7 @@ let Displaybutton
         type="button"
         onClick={() => fetchWord()}
       >
-        //Refresh ▶
+        
       </button>
     )
   }
