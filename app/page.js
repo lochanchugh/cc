@@ -82,9 +82,9 @@ if (batsman === "Data Not Found") {
   )
 } else {
   Displayscore = (
-      <div className="flex items-center gap-4">
+    <div className="flex items-center justify-between gap-4 p-4">
       <div className="text-center">
-        <div className="bg-blue-100 rounded-lg p-6">
+        <div className="bg-blue-500 rounded-lg p-6">
           <p className="text-4xl font-bold mb-4">{score}</p>
           <p>CRR: {runrate}</p>
           <p className="text-lg">{update}</p>
@@ -143,7 +143,7 @@ return (
     <div className="bg-blue-100 rounded-lg p-6 text-center">
       {Displayscore}
     </div>
-    <div className="bg-blue-100 rounded-lg p-4 text-white">
+    <div className="bg-blue-100 rounded-lg p-4 text-black">
       <p>Recent Balls: {recentballs}</p>
     </div>
   </div>
