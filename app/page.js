@@ -134,9 +134,6 @@ return (
         <div className="bg-white dark:bg-gray-700 rounded-lg border border-blue-400 p-4">
           {Displayscore}
         </div>
-        <div className="bg-white dark:bg-gray-700 rounded-lg border border-blue-400 p-4">
-          {Displaybutton}
-        </div>
       </div>
     </div>
   </div>
