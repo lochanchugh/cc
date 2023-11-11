@@ -97,15 +97,15 @@ if (batsman === "Data Not Found") {
     <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}   |    {runrate}</p> </marquee> 
     </div>
     
-        <div className="grid grid-cols-2 gap-10 mt-4 border border-sky-500">
-          <div className="text-left">
+        <div className="grid grid-cols-2 gap-0 mt-4 border border-sky-500">
+          <div className="text-left pr-16 border-r">
            
             <p>{batsman} {batsmanrun}</p>
             <p>SR: {sr} ({fours} 4s, {sixes} 6s) </p>
             <p>{batsmantwo} {batsmantworun}</p>
             <p>SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
           </div>
-          <div className="text-right">
+          <div className="text-right pl-16 border-l">
            
             <p>{bowler} </p>
             <p>{bowlerover}ov  {bowlerruns}/{bowlerwickets} -  M: {bowlermaiden}</p>
