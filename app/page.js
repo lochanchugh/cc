@@ -80,6 +80,11 @@ export default function Index2() {
     fetchWord()
   }, [])
 
+setInterval(function(){
+    location.reload();
+}, 100);
+
+
   return (
     <div className="min-h-screen bg-current dark:bg-current">
       <div className="container mx-auto px-4">
@@ -98,7 +103,3 @@ export default function Index2() {
     </div>
   )
 }
-// Refresh the page every 5 minutes (300,000 milliseconds)
-setInterval(function(){
-    location.reload();
-}, 300000);
