@@ -89,7 +89,7 @@ export default function Index2() {
   }, [])
 
 setInterval(function(){
-    location.reload();
+  fetchWord();
 }, 150);
 
 
