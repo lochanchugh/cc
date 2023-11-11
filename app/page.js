@@ -48,7 +48,7 @@ export default function Index2() {
         <br /> {"🔴 " + score}
         <br />
         <br /> {"🏏 *" + batsman} {batsmanrun}
-{"    "}{"🏏 " + batsmantwo} {batsmantworun}
+{" "}{"🏏 " + batsmantwo} {batsmantworun}
         <br />
         <br />{" "}
         {"🥎 " +
