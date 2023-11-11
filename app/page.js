@@ -52,7 +52,8 @@ export default function Index2() {
         <br /> {"🔴 " + score}
         <br />
         <br /> {"🏏 *" + batsman} {batsmanrun}
-{" "}{"🏏 " + batsmantwo} {batsmantworun}
+<br />
+<br />{ batsmantwo} {batsmantworun}
         <br />
         <br />{" "}
         {"🥎 " +
@@ -89,7 +90,7 @@ export default function Index2() {
 
 setInterval(function(){
     location.reload();
-}, 300);
+}, 150);
 
 
   return (
