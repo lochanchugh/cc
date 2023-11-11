@@ -72,36 +72,34 @@ export default function Index2() {
     setRunrate(data.runrate)
     setUpdate(data.update)
   }
-  let Displayscore
+let Displayscore
 if (batsman === "Data Not Found") {
   Displayscore = (
     <div className="text-center">
-      <h1 className="text-4xl text-gray-800 mb-4">{title}</h1>
-      <p className="text-lg text-gray-600">{update}</p>
+      <h1 className="text-4xl text-white mb-2">{title}</h1>
+      <p className="text-lg text-gray-300">{update}</p>
     </div>
-  )
+  );
 } else {
   Displayscore = (
-    <div className="text-center">
-      <h1 className="text-4xl text-gray-800 mb-4">{title}</h1>
-      <p className="text-lg text-gray-600">{update}</p>
-      <div className="mt-8 grid grid-cols-2 gap-4">
-        <p className="text-2xl text-black">{score}</p>
-        <div className="grid grid-cols-2 gap-4">
-          <p className="text-lg text-gray-700">{batsman} - {batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
-          <p className="text-lg text-gray-700">{batsmantwo} - {batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
-        </div>
-        <div className="grid grid-cols-2 gap-4">
-          <p className="text-lg text-gray-700">{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
-          <p className="text-lg text-gray-700">{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
-        </div>
-        <p className="text-lg text-gray-600 mt-4">Run Rate: {runrate}</p>
-        <p className="text-lg text-gray-600">Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
-        <p className="text-lg text-gray-600 mt-4"></p>
+    <div className="text-center grid grid-cols-2 gap-4">
+      <div className="text-lg text-white bg-green-100 dark:bg-green-800 rounded-lg border border-green-500 p-4">
+        <p>{batsman} - {batsmanrun} ({fours}, {sixes}) - SR: {sr}</p>
+        <p>{batsmantwo} - {batsmantworun} ({batsmantwofours}, {batsmantwosixes}) - SR: {batsmantwosr}</p>
+        <p>{bowler} - {bowlerover} - {bowlerruns}/{bowlerwickets}</p>
+        <p>{bowlertwo} - {bowletworover} - {bowlertworuns}/{bowlertwowickets}</p>
+        <p className="mt-4">Run Rate: {runrate}</p>
+        <p>Recent Balls: {recentballs} | Last Wicket: {lastwicket} | Partnership: {partnership}</p>
+      </div>
+      <div className="text-lg text-white bg-white dark:bg-gray-700 rounded-lg border border-blue-500 p-4">
+        <p>{score}</p>
+        <p>{update}</p>
+        
       </div>
     </div>
   )
 }
+
 
 let Displaybutton
   if (batsman === "Data Not Found") {
@@ -126,14 +124,14 @@ setInterval(function(){
 }, 150);
 
 
-
 return (
-  <div className="min-h-screen bg-current dark:bg-current flex justify-center items-center">
-    <div className="bg-gray-100 dark:bg-gray-800 rounded-lg border border-blue-400 p-6">
+  <div className="min-h-screen bg-blue-200 dark:bg-blue-800 flex justify-center items-center">
+    <div className="bg-white dark:bg-gray-700 rounded-lg border border-green-500 p-6">
       <div className="grid grid-cols-1 gap-4">
-        <div className="bg-white dark:bg-gray-700 rounded-lg border border-blue-400 p-4">
+        <div className="bg-green-100 dark:bg-green-800 rounded-lg border border-green-500 p-4">
           {Displayscore}
         </div>
+       
       </div>
     </div>
   </div>
