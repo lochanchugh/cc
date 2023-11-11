@@ -115,7 +115,7 @@ if (batsman === "Data Not Found") {
       <p className="bg-blue-100 rounded-lg p-4 text-black">Recent Balls: {recentballs}</p>
     
       </div>
-    </div>
+    
   
     
   )
