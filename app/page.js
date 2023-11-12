@@ -101,8 +101,7 @@ if (batsman === "Data Not Found") {
           <thead>
             <tr className="text-white bg-blue-500">
               <th className="px-6 py-0">Batsman</th>
-              <th className="px-4 py-0">R</th>
-              <th className="px-4 py-0">B</th>
+              <th className="px-4 py-0">R(B)</th>
               <th className="px-4 py-0">4</th>
               <th className="px-4 py-0">6</th>
               <th className="px-4 py-0">SR</th>
@@ -111,16 +110,14 @@ if (batsman === "Data Not Found") {
           <tbody>
             <tr className="text-black">
               <td className="px-6 py-0">{batsman}</td>
-              <td className="px-4 py-0">{batsmanrun}</td>
-              <td className="px-4 py-0">{/* Add balls details here */}</td>
+              <td className="px-4 py-0">({batsmanrun})</td>
               <td className="px-4 py-0">{fours}</td>
               <td className="px-4 py-0">{sixes}</td>
               <td className="px-4 py-0">{sr}</td>
             </tr>
             <tr className="text-black">
               <td className="px-6 py-0">{batsmantwo}</td>
-              <td className="px-4 py-0">{batsmantworun}</td>
-              <td className="px-4 py-0">{/* Add balls details here */}</td>
+              <td className="px-4 py-0">({batsmantworun})</td>
               <td className="px-4 py-0">{batsmantwofours}</td>
               <td className="px-4 py-0">{batsmantwosixes}</td>
               <td className="px-4 py-0">{batsmantwosr}</td>
