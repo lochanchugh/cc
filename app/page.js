@@ -109,7 +109,7 @@ if (batsman === "Data Not Found") {
           </thead>
           <tbody>
             <tr className="text-black">
-              <td className="px-6 py-0">{batsman}</td>
+              <td className="px-6 py-0">{"🏏" + batsman}</td>
               <td className="px-4 py-0">{batsmanrun}</td>
               <td className="px-4 py-0">{fours}</td>
               <td className="px-4 py-0">{sixes}</td>
@@ -139,7 +139,7 @@ if (batsman === "Data Not Found") {
           </thead>
           <tbody>
             <tr className="text-black">
-              <td className="px-6 py-0">{bowler}</td>
+              <td className="px-6 py-0">{"🔴 " + bowler}</td>
               <td className="px-4 py-0">{bowlerover}</td>
               <td className="px-4 py-0">{bowlerruns}</td>
               <td className="px-4 py-0">{bowlerwickets}</td>
