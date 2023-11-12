@@ -86,7 +86,7 @@ Displayscore = (
     <h1 className="text-2xl text-blue-700">{title}</h1>
     <hr className="border-blue-500 my-4" />
 
-    <div className="bg-blue-300 rounded-lg p-4 mb-3">
+    <div className="bg-blue-300 rounded-lg p-4 mb-2">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
@@ -95,65 +95,65 @@ Displayscore = (
       <p className="text-blue-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-1 gap-0 mt-2 border border-blue-500">
-      <div className="text-left border-2 border-blue-500 p-3">
+    <div className="grid grid-cols-1 gap-0 mt-2 border-0 border-blue-500">
+      <div className="text-left border-0 border-blue-500 pb-2">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="px-6 py-2">Batsman</th>
-              <th className="px-4 py-2">Runs</th>
-              <th className="px-4 py-2">Balls</th>
-              <th className="px-4 py-2">4s</th>
-              <th className="px-4 py-2">6s</th>
-              <th className="px-4 py-2">SR</th>
+              <th className="px-6 py-1">Batsman</th>
+              <th className="px-4 py-1">Runs</th>
+              <th className="px-4 py-1">Balls</th>
+              <th className="px-4 py-1">4s</th>
+              <th className="px-4 py-1">6s</th>
+              <th className="px-4 py-1">SR</th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-blue-900">
-              <td className="px-6 py-2">{batsman}</td>
-              <td className="px-4 py-2">{batsmanrun}</td>
-              <td className="px-4 py-2">{/* Add balls details here */}</td>
-              <td className="px-4 py-2">{fours}</td>
-              <td className="px-4 py-2">{sixes}</td>
-              <td className="px-4 py-2">{sr}</td>
+              <td className="px-6 py-1">{batsman}</td>
+              <td className="px-4 py-1">{batsmanrun}</td>
+              <td className="px-4 py-1">{/* Add balls details here */}</td>
+              <td className="px-4 py-1">{fours}</td>
+              <td className="px-4 py-1">{sixes}</td>
+              <td className="px-4 py-1">{sr}</td>
             </tr>
             <tr className="text-blue-900">
-              <td className="px-6 py-2">{batsmantwo}</td>
-              <td className="px-4 py-2">{batsmantworun}</td>
-              <td className="px-4 py-2">{/* Add balls details here */}</td>
-              <td className="px-4 py-2">{batsmantwofours}</td>
-              <td className="px-4 py-2">{batsmantwosixes}</td>
-              <td className="px-4 py-2">{batsmantwosr}</td>
+              <td className="px-6 py-1">{batsmantwo}</td>
+              <td className="px-4 py-1">{batsmantworun}</td>
+              <td className="px-4 py-1">{/* Add balls details here */}</td>
+              <td className="px-4 py-1">{batsmantwofours}</td>
+              <td className="px-4 py-1">{batsmantwosixes}</td>
+              <td className="px-4 py-1">{batsmantwosr}</td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <div className="text-left border-2 border-blue-500 p-3">
+      <div className="text-left border-0 border-blue-500 p-3">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="px-6 py-2">Bowler</th>
-              <th className="px-4 py-2">Overs</th>
-              <th className="px-4 py-2">Runs</th>
-              <th className="px-4 py-2">Wickets</th>
-              <th className="px-4 py-2">Maiden</th>
+              <th className="px-6 py-1">Bowler</th>
+              <th className="px-4 py-1">Overs</th>
+              <th className="px-4 py-1">Runs</th>
+              <th className="px-4 py-1">Wickets</th>
+              <th className="px-4 py-1">Maiden</th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-blue-900">
-              <td className="px-6 py-2">{bowler}</td>
-              <td className="px-4 py-2">{bowlerover}</td>
-              <td className="px-4 py-2">{bowlerruns}</td>
-              <td className="px-4 py-2">{bowlerwickets}</td>
-              <td className="px-4 py-2">{bowlermaiden}</td>
+              <td className="px-6 py-1">{bowler}</td>
+              <td className="px-4 py-1">{bowlerover}</td>
+              <td className="px-4 py-1">{bowlerruns}</td>
+              <td className="px-4 py-1">{bowlerwickets}</td>
+              <td className="px-4 py-1">{bowlermaiden}</td>
             </tr>
             <tr className="text-blue-900">
-              <td className="px-6 py-2">{bowlertwo}</td>
-              <td className="px-4 py-2">{bowletworover}</td>
-              <td className="px-4 py-2">{bowlertworuns}</td>
-              <td className="px-4 py-2">{bowlertwowickets}</td>
-              <td className="px-4 py-2">{bowlertwomaiden}</td>
+              <td className="px-6 py-1">{bowlertwo}</td>
+              <td className="px-4 py-1">{bowletworover}</td>
+              <td className="px-4 py-1">{bowlertworuns}</td>
+              <td className="px-4 py-1">{bowlertwowickets}</td>
+              <td className="px-4 py-1">{bowlertwomaiden}</td>
             </tr>
           </tbody>
         </table>
