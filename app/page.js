@@ -157,7 +157,7 @@ if (batsman === "Data Not Found") {
       </div>
     </div>
 
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500">Recent Balls: {lastwicket} {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
   </div>
 )
 }
@@ -183,7 +183,7 @@ let Displaybutton
 
 setInterval(function(){
   fetchWord();
-}, 850);
+}, 1850);
 
 
 return (
