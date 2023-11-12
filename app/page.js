@@ -86,17 +86,17 @@ if (batsman !== "Data Not Found") {
     <h1 className="text-2xl text-blue-700">{title}</h1>
     <hr className="border-blue-500 my-4" />
 
-    <div className="bg-blue-200 rounded-lg p-4 mb-2">
+    <div className="bg-orange-300 rounded-lg p-4 mb-2">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
     <marquee width="500px">
-      <p className="text-orange-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
+      <p className="text-black-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-1 gap-0 border-2 border-orange-500">
-      <div className="text-left border-2 border-orange-500 pb-2">
+    <div className="grid grid-cols-1 gap-0 mt-2 border-0 border-blue-500">
+      <div className="text-left border-0 border-blue-500 pb-2">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
@@ -129,7 +129,7 @@ if (batsman !== "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-2 border-orange-500 p-3">
+      <div className="text-left border-0 border-blue-500 p-3">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
@@ -163,7 +163,6 @@ if (batsman !== "Data Not Found") {
     <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
   </div>
 )
-
 }
 
 
