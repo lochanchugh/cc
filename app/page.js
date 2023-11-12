@@ -86,13 +86,13 @@ if (batsman !== "Data Not Found") {
     <h1 className="text-2xl text-blue-700">{title}</h1>
     <hr className="border-blue-500 my-4" />
 
-    <div className="bg-orange-300 rounded-lg p-4 mb-2">
+    <div className="bg-orange rounded-lg p-4 mb-2">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
     <marquee width="500px">
-      <p className="text-black-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
+      <p className="text-black">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
     <div className="grid grid-cols-1 gap-0 mt-2 border-0 border-blue-500">
