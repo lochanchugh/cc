@@ -91,7 +91,7 @@ Displayscore = (
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
-    <marquee width="20%">
+    <marquee width="500px">
       <p className="text-blue-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
