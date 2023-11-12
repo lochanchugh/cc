@@ -101,10 +101,10 @@ Displayscore = (
           <thead>
             <tr className="text-white bg-blue-500">
               <th className="px-6 py-1">Batsman</th>
-              <th className="px-4 py-1">Runs</th>
-              <th className="px-4 py-1">Balls</th>
-              <th className="px-4 py-1">4s</th>
-              <th className="px-4 py-1">6s</th>
+              <th className="px-4 py-1">R</th>
+              <th className="px-4 py-1">B</th>
+              <th className="px-4 py-1">4</th>
+              <th className="px-4 py-1">6</th>
               <th className="px-4 py-1">SR</th>
             </tr>
           </thead>
@@ -134,10 +134,10 @@ Displayscore = (
           <thead>
             <tr className="text-white bg-blue-500">
               <th className="pl-6 pr-8 py-1">Bowler</th>
-              <th className="px-4 py-1">Overs</th>
-              <th className="px-4 py-1">Runs</th>
-              <th className="px-4 py-1">Wickets</th>
-              <th className="px-4 py-1">Maiden</th>
+              <th className="px-4 py-1">O</th>
+              <th className="px-4 py-1">R</th>
+              <th className="px-4 py-1">W</th>
+              <th className="px-4 py-1">M</th>
             </tr>
           </thead>
           <tbody>
