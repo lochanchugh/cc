@@ -133,7 +133,7 @@ Displayscore = (
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="px-6 py-1">Bowler</th>
+              <th className="pl-6 pr-8 py-1">Bowler</th>
               <th className="px-4 py-1">Overs</th>
               <th className="px-4 py-1">Runs</th>
               <th className="px-4 py-1">Wickets</th>
