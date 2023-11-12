@@ -84,7 +84,7 @@ if (batsman === "Data Not Found") {
    Displayscore = (
   <div className="flex flex-col items-center justify-between p-4">
     <h1 className="text-2xl text-blue-700">{title}</h1>
-    <hr className="border-blue-500 my-4" />
+    <hr className="border-blue-500 my-1" />
 
     <div className="bg-orange-500 rounded-lg px-4 py-2 mb-0.5">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
@@ -96,7 +96,7 @@ if (batsman === "Data Not Found") {
     </marquee>
 
     <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500">
-      <div className="text-left border-0 border-blue-500 pb-2">
+      <div className="text-left border-0 border-blue-500">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
