@@ -86,7 +86,7 @@ if (batsman !== "Data Not Found") {
     <h1 className="text-2xl text-blue-700">{title}</h1>
     <hr className="border-blue-500 my-4" />
 
-    <div className="bg-orange-500 rounded-lg p-4 mb-2">
+    <div className="bg-orange-500 rounded-lg px-4 py-2 mb-0.5">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
@@ -95,35 +95,35 @@ if (batsman !== "Data Not Found") {
       <p className="text-black text-sm">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-1 gap-0 mt-1 border-0 border-blue-500">
+    <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500">
       <div className="text-left border-0 border-blue-500 pb-2">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="px-6 py-0.5">Batsman</th>
-              <th className="px-4 py-0.5">R</th>
-              <th className="px-4 py-0.5">B</th>
-              <th className="px-4 py-0.5">4</th>
-              <th className="px-4 py-0.5">6</th>
-              <th className="px-4 py-0.5">SR</th>
+              <th className="px-6 py-0">Batsman</th>
+              <th className="px-4 py-0">R</th>
+              <th className="px-4 py-0">B</th>
+              <th className="px-4 py-0">4</th>
+              <th className="px-4 py-0">6</th>
+              <th className="px-4 py-0">SR</th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-black">
-              <td className="px-6 py-0.5">{batsman}</td>
-              <td className="px-4 py-0.5">{batsmanrun}</td>
-              <td className="px-4 py-0.5">{/* Add balls details here */}</td>
-              <td className="px-4 py-0.5">{fours}</td>
-              <td className="px-4 py-0.5">{sixes}</td>
-              <td className="px-4 py-0.5">{sr}</td>
+              <td className="px-6 py-0">{batsman}</td>
+              <td className="px-4 py-0">{batsmanrun}</td>
+              <td className="px-4 py-0">{/* Add balls details here */}</td>
+              <td className="px-4 py-0">{fours}</td>
+              <td className="px-4 py-0">{sixes}</td>
+              <td className="px-4 py-0">{sr}</td>
             </tr>
             <tr className="text-black">
-              <td className="px-6 py-0.5">{batsmantwo}</td>
-              <td className="px-4 py-0.5">{batsmantworun}</td>
-              <td className="px-4 py-0.5">{/* Add balls details here */}</td>
-              <td className="px-4 py-0.5">{batsmantwofours}</td>
-              <td className="px-4 py-0.5">{batsmantwosixes}</td>
-              <td className="px-4 py-0.5">{batsmantwosr}</td>
+              <td className="px-6 py-0">{batsmantwo}</td>
+              <td className="px-4 py-0">{batsmantworun}</td>
+              <td className="px-4 py-0">{/* Add balls details here */}</td>
+              <td className="px-4 py-0">{batsmantwofours}</td>
+              <td className="px-4 py-0">{batsmantwosixes}</td>
+              <td className="px-4 py-0">{batsmantwosr}</td>
             </tr>
           </tbody>
         </table>
@@ -133,34 +133,34 @@ if (batsman !== "Data Not Found") {
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="pl-6 pr-8 py-0.5">Bowler</th>
-              <th className="px-4 py-0.5">O</th>
-              <th className="px-4 py-0.5">R</th>
-              <th className="px-4 py-0.5">W</th>
-              <th className="px-4 py-0.5">M</th>
+              <th className="pl-6 pr-8 py-0">Bowler</th>
+              <th className="px-4 py-0">O</th>
+              <th className="px-4 py-0">R</th>
+              <th className="px-4 py-0">W</th>
+              <th className="px-4 py-0">M</th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-black">
-              <td className="px-6 py-0.5">{bowler}</td>
-              <td className="px-4 py-0.5">{bowlerover}</td>
-              <td className="px-4 py-0.5">{bowlerruns}</td>
-              <td className="px-4 py-0.5">{bowlerwickets}</td>
-              <td className="px-4 py-0.5">{bowlermaiden}</td>
+              <td className="px-6 py-0">{bowler}</td>
+              <td className="px-4 py-0">{bowlerover}</td>
+              <td className="px-4 py-0">{bowlerruns}</td>
+              <td className="px-4 py-0">{bowlerwickets}</td>
+              <td className="px-4 py-0">{bowlermaiden}</td>
             </tr>
             <tr className="text-black">
-              <td className="px-6 py-0.5">{bowlertwo}</td>
-              <td className="px-4 py-0.5">{bowletworover}</td>
-              <td className="px-4 py-0.5">{bowlertworuns}</td>
-              <td className="px-4 py-0.5">{bowlertwowickets}</td>
-              <td className="px-4 py-0.5">{bowlertwomaiden}</td>
+              <td className="px-6 py-0">{bowlertwo}</td>
+              <td className="px-4 py-0">{bowletworover}</td>
+              <td className="px-4 py-0">{bowlertworuns}</td>
+              <td className="px-4 py-0">{bowlertwowickets}</td>
+              <td className="px-4 py-0">{bowlertwomaiden}</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
 
-    <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
   </div>
 )
 }
