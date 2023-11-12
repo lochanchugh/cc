@@ -81,48 +81,90 @@ if (batsman !== "Data Not Found") {
     </div>
   )
 } else {
-  Displayscore = (
-    <div className="flex flex-col items-center justify-between p-4">
-    <h1 className="text-xl">{title}</h1>
-  <hr className="border-gray-300 my-4" />
-    
-        <div className="bg-blue-500 rounded-lg pl-4 pr-4 pt-4 pb-4 mb-3">
-          <p className="text-4xl text-white font-bold text-center">{score}</p>
-         
-          <p className="text-lg text-center">{update}</p>
-        </div>
-    
-    <div>
-    
-    <marquee> <p>Partnership: {partnership}   |   Last Wicket: {lastwicket}   |    {runrate}</p> </marquee> 
+Displayscore = (
+  <div className="flex flex-col items-center justify-between p-4">
+    <h1 className="text-2xl text-blue-700">{title}</h1>
+    <hr className="border-blue-500 my-4" />
+
+    <div className="bg-blue-300 rounded-lg p-4 mb-3">
+      <p className="text-4xl text-white font-bold text-center">{score}</p>
+      <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
-    
-        <div className="grid grid-cols-2 gap-0 mt-3 border border-blue-500">
-          <div className="text-left pr-16 py-4 pl-4 border-2 border-blue-500">
-           
-            <p>{"🏏 " + batsman} {batsmanrun} SR: {sr} ({fours} 4s, {sixes} 6s) </p>
-            <p></p>
-            <p>{batsmantwo} {batsmantworun} SR: {batsmantwosr} ({batsmantwofours} 4s, {batsmantwosixes} 6s)</p>
-            <p>{"🔴 " + bowler} {bowlerover}ov  {bowlerruns}/{bowlerwickets} -  M: {bowlermaiden}</p>
-            <p></p>
-          </div>
-          <div className="text-left pr-16 py-4 pr-4 border-l-0 border-t-2 border-b-2 border-r-2  border-blue-500">
-           
-            <p></p>
-            <p></p>
-            <p></p>
-            
-          </div>
-        </div>
-    
-      <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
-    
+
+    <marquee>
+      <p className="text-blue-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
+    </marquee>
+
+    <div className="grid grid-cols-2 gap-0 mt-3 border border-blue-500">
+      <div className="text-left border-2 border-blue-500 p-4">
+        <table className="w-full">
+          <thead>
+            <tr className="text-white bg-blue-500">
+              <th className="px-4 py-2">Batsman</th>
+              <th className="px-4 py-2">Runs</th>
+              <th className="px-4 py-2">Balls</th>
+              <th className="px-4 py-2">4s</th>
+              <th className="px-4 py-2">6s</th>
+              <th className="px-4 py-2">SR</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="text-blue-900">
+              <td className="px-4 py-2">{batsman}</td>
+              <td className="px-4 py-2">{batsmanrun}</td>
+              <td className="px-4 py-2">{/* Add balls details here */}</td>
+              <td className="px-4 py-2">{fours}</td>
+              <td className="px-4 py-2">{sixes}</td>
+              <td className="px-4 py-2">{sr}</td>
+            </tr>
+            <tr className="text-blue-900">
+              <td className="px-4 py-2">{batsmantwo}</td>
+              <td className="px-4 py-2">{batsmantworun}</td>
+              <td className="px-4 py-2">{/* Add balls details here */}</td>
+              <td className="px-4 py-2">{batsmantwofours}</td>
+              <td className="px-4 py-2">{batsmantwosixes}</td>
+              <td className="px-4 py-2">{batsmantwosr}</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-  
-  
-    
-  )
+
+      <div className="text-left border-2 border-blue-500 p-4">
+        <table className="w-full">
+          <thead>
+            <tr className="text-white bg-blue-500">
+              <th className="px-4 py-2">Bowler</th>
+              <th className="px-4 py-2">Overs</th>
+              <th className="px-4 py-2">Runs</th>
+              <th className="px-4 py-2">Wickets</th>
+              <th className="px-4 py-2">Maiden</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="text-blue-900">
+              <td className="px-4 py-2">{bowler}</td>
+              <td className="px-4 py-2">{bowlerover}</td>
+              <td className="px-4 py-2">{bowlerruns}</td>
+              <td className="px-4 py-2">{bowlerwickets}</td>
+              <td className="px-4 py-2">{bowlermaiden}</td>
+            </tr>
+            <tr className="text-blue-900">
+              <td className="px-4 py-2">{bowlertwo}</td>
+              <td className="px-4 py-2">{bowletworover}</td>
+              <td className="px-4 py-2">{bowlertworuns}</td>
+              <td className="px-4 py-2">{bowlertwowickets}</td>
+              <td className="px-4 py-2">{bowlertwomaiden}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
+  </div>
+)
 }
+
 
 let Displaybutton
   if (batsman === "Data Not Found") {
