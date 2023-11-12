@@ -91,16 +91,16 @@ Displayscore = (
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
-    <marquee>
+    <marquee width="70%">
       <p className="text-blue-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-1 gap-0 mt-3 border border-blue-500">
-      <div className="text-left border-2 border-blue-500 p-4">
+    <div className="grid grid-cols-1 gap-0 mt-2 border border-blue-500">
+      <div className="text-left border-2 border-blue-500 p-3">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="px-4 py-2">Batsman</th>
+              <th className="px-6 py-2">Batsman</th>
               <th className="px-4 py-2">Runs</th>
               <th className="px-4 py-2">Balls</th>
               <th className="px-4 py-2">4s</th>
@@ -110,7 +110,7 @@ Displayscore = (
           </thead>
           <tbody>
             <tr className="text-blue-900">
-              <td className="px-4 py-2">{batsman}</td>
+              <td className="px-6 py-2">{batsman}</td>
               <td className="px-4 py-2">{batsmanrun}</td>
               <td className="px-4 py-2">{/* Add balls details here */}</td>
               <td className="px-4 py-2">{fours}</td>
@@ -118,7 +118,7 @@ Displayscore = (
               <td className="px-4 py-2">{sr}</td>
             </tr>
             <tr className="text-blue-900">
-              <td className="px-4 py-2">{batsmantwo}</td>
+              <td className="px-6 py-2">{batsmantwo}</td>
               <td className="px-4 py-2">{batsmantworun}</td>
               <td className="px-4 py-2">{/* Add balls details here */}</td>
               <td className="px-4 py-2">{batsmantwofours}</td>
@@ -129,11 +129,11 @@ Displayscore = (
         </table>
       </div>
 
-      <div className="text-left border-2 border-blue-500 p-4">
+      <div className="text-left border-2 border-blue-500 p-3">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
-              <th className="px-4 py-2">Bowler</th>
+              <th className="px-6 py-2">Bowler</th>
               <th className="px-4 py-2">Overs</th>
               <th className="px-4 py-2">Runs</th>
               <th className="px-4 py-2">Wickets</th>
@@ -142,14 +142,14 @@ Displayscore = (
           </thead>
           <tbody>
             <tr className="text-blue-900">
-              <td className="px-4 py-2">{bowler}</td>
+              <td className="px-6 py-2">{bowler}</td>
               <td className="px-4 py-2">{bowlerover}</td>
               <td className="px-4 py-2">{bowlerruns}</td>
               <td className="px-4 py-2">{bowlerwickets}</td>
               <td className="px-4 py-2">{bowlermaiden}</td>
             </tr>
             <tr className="text-blue-900">
-              <td className="px-4 py-2">{bowlertwo}</td>
+              <td className="px-6 py-2">{bowlertwo}</td>
               <td className="px-4 py-2">{bowletworover}</td>
               <td className="px-4 py-2">{bowlertworuns}</td>
               <td className="px-4 py-2">{bowlertwowickets}</td>
