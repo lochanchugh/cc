@@ -81,7 +81,7 @@ if (batsman !== "Data Not Found") {
     </div>
   )
 } else {
- Displayscore = (
+Displayscore = (
   <div className="flex flex-col items-center justify-between p-4">
     <h1 className="text-2xl text-blue-700">{title}</h1>
     <hr className="border-blue-500 my-4" />
@@ -95,7 +95,7 @@ if (batsman !== "Data Not Found") {
       <p className="text-blue-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-2 gap-0 border border-blue-500">
+    <div className="grid grid-cols-1 gap-0 mt-3 border border-blue-500">
       <div className="text-left border-2 border-blue-500 p-4">
         <table className="w-full">
           <thead>
@@ -128,7 +128,8 @@ if (batsman !== "Data Not Found") {
           </tbody>
         </table>
       </div>
-      <div className="text-left border-2 border-t-0 border-b-2 border-l-0 border-r-2 border-blue-500 p-4">
+
+      <div className="text-left border-2 border-blue-500 p-4">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
@@ -162,7 +163,6 @@ if (batsman !== "Data Not Found") {
     <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
   </div>
 )
-
 }
 
 
