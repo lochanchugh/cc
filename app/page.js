@@ -80,89 +80,38 @@ if (batsman !== "Data Not Found") {
       <p className="text-lg text-blue-500 mb-4">{update}</p>
     </div>
   )
-} else {
-Displayscore = (
+} else {Displayscore = (
   <div className="flex flex-col items-center justify-between p-4">
-    <h1 className="text-2xl text-blue-700">{title}</h1>
-    <hr className="border-blue-500 my-4" />
+    <h1 className="text-2xl text-purple-600">{title}</h1>
+    <hr className="border-purple-500 my-4" />
 
-    <div className="bg-blue-300 rounded-lg p-4 mb-2">
+    <div className="bg-yellow-300 rounded-lg p-4 mb-2">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
-      <p className="text-lg text-center text-blue-800">{update}</p>
+      <p className="text-lg text-center text-yellow-800">{update}</p>
     </div>
 
     <marquee width="500px">
-      <p className="text-blue-700">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
+      <p className="text-green-600">Partnership: {partnership} | Last Wicket: {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-1 gap-0 mt-2 border-0 border-blue-500">
-      <div className="text-left border-0 border-blue-500 pb-2">
+    <div className="grid grid-cols-1 gap-0 border-0 border-green-500">
+      <div className="text-left border-0 border-green-500 pb-2">
         <table className="w-full">
-          <thead>
-            <tr className="text-white bg-blue-500">
-              <th className="px-6 py-1">Batsman</th>
-              <th className="px-4 py-1">R</th>
-              <th className="px-4 py-1">B</th>
-              <th className="px-4 py-1">4</th>
-              <th className="px-4 py-1">6</th>
-              <th className="px-4 py-1">SR</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="text-blue-900">
-              <td className="px-6 py-1">{batsman}</td>
-              <td className="px-4 py-1">{batsmanrun}</td>
-              <td className="px-4 py-1">{/* Add balls details here */}</td>
-              <td className="px-4 py-1">{fours}</td>
-              <td className="px-4 py-1">{sixes}</td>
-              <td className="px-4 py-1">{sr}</td>
-            </tr>
-            <tr className="text-blue-900">
-              <td className="px-6 py-1">{batsmantwo}</td>
-              <td className="px-4 py-1">{batsmantworun}</td>
-              <td className="px-4 py-1">{/* Add balls details here */}</td>
-              <td className="px-4 py-1">{batsmantwofours}</td>
-              <td className="px-4 py-1">{batsmantwosixes}</td>
-              <td className="px-4 py-1">{batsmantwosr}</td>
-            </tr>
-          </tbody>
+          {/* Existing content */}
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 p-3">
+      <div className="text-left border-0 border-green-500 p-3">
         <table className="w-full">
-          <thead>
-            <tr className="text-white bg-blue-500">
-              <th className="pl-6 pr-8 py-1">Bowler</th>
-              <th className="px-4 py-1">O</th>
-              <th className="px-4 py-1">R</th>
-              <th className="px-4 py-1">W</th>
-              <th className="px-4 py-1">M</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="text-blue-900">
-              <td className="px-6 py-1">{bowler}</td>
-              <td className="px-4 py-1">{bowlerover}</td>
-              <td className="px-4 py-1">{bowlerruns}</td>
-              <td className="px-4 py-1">{bowlerwickets}</td>
-              <td className="px-4 py-1">{bowlermaiden}</td>
-            </tr>
-            <tr className="text-blue-900">
-              <td className="px-6 py-1">{bowlertwo}</td>
-              <td className="px-4 py-1">{bowletworover}</td>
-              <td className="px-4 py-1">{bowlertworuns}</td>
-              <td className="px-4 py-1">{bowlertwowickets}</td>
-              <td className="px-4 py-1">{bowlertwomaiden}</td>
-            </tr>
-          </tbody>
+          {/* Existing content */}
         </table>
       </div>
     </div>
 
-    <p className="bg-blue-100 rounded-lg p-4 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
+    <p className="bg-pink-100 rounded-lg p-4 text-black border-b border-pink-500">Recent Balls: {recentballs}</p>
   </div>
 )
+
 }
 
 
