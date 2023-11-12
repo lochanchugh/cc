@@ -73,7 +73,7 @@ export default function Index2() {
     setUpdate(data.update)
   }
 let Displayscore
-if (batsman !== "Data Not Found") {
+if (batsman === "Data Not Found") {
   Displayscore = (
     <div className="text-center">
       <h1 className="text-4xl text-white mb-2">{title}</h1>
