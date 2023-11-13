@@ -92,7 +92,7 @@ if (batsman === "Data Not Found") {
     </div>
 
     <marquee width="500px">
-      <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  | {runrate}</p>
+      <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket} | {runrate}</p>
     </marquee>
 
     <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500">
@@ -183,7 +183,7 @@ let Displaybutton
 
 setInterval(function(){
   fetchWord();
-}, 1850);
+}, 5850);
 
 
 return (
