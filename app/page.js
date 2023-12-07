@@ -127,7 +127,7 @@ if (batsman === "Data Not Found") {
       </div>
 
       <div className="text-left border-0 border-blue-500 p-3">
-        <table className="w-full">
+        <table>
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="pl-6 pr-8 py-0">Bowler</th>
