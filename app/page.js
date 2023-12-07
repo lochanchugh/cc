@@ -133,7 +133,7 @@ if (batsman === "Data Not Found") {
               <th className="pl-6 pr-8 py-0">Bowler</th>
               <th className="px-4 py-0">Overs</th>
               <th className="px-4 py-0">Runs</th>
-              <th className="px-5 py-0">W</th>
+              <th className="px-3 py-0">W</th>
               <th className="px-4 py-0">Maiden</th>
             </tr>
           </thead>
@@ -142,21 +142,21 @@ if (batsman === "Data Not Found") {
               <td className="px-6 py-0">{"🔴 " + bowler}</td>
               <td className="px-4 py-0">{bowlerover}</td>
               <td className="px-4 py-0">{bowlerruns}</td>
-              <td className="px-5 py-0">{bowlerwickets}</td>
+              <td className="px-3 py-0">{bowlerwickets}</td>
               <td className="px-4 py-0">{bowlermaiden}</td>
             </tr>
             <tr className="text-black w-152">
               <td className="px-6 py-0">{bowlertwo}</td>
               <td className="px-4 py-0">{bowletworover}</td>
               <td className="px-4 py-0">{bowlertworuns}</td>
-              <td className="px-5 py-0">{bowlertwowickets}</td>
+              <td className="px-3 py-0">{bowlertwowickets}</td>
               <td className="px-4 py-0">{bowlertwomaiden}</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-12 text-left">Recent Balls: {recentballs}  |  | {runrate}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-35 text-left">Recent Balls: {recentballs}  |   {runrate}</p>
   
   </div>
 )
@@ -189,7 +189,7 @@ setInterval(function(){
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-1">
     
-    <div className="bg-[#ffff00] rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
+    <div className="bg-[#ffff00]-800 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
       {Displayscore}
     </div>
   </div>
