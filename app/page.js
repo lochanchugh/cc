@@ -91,7 +91,7 @@ if (batsman === "Data Not Found") {
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
-    <marquee className="w-fit">
+    <marquee className="w-3/4">
       <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket} | {runrate}</p>
     </marquee>
 
