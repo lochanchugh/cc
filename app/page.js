@@ -101,9 +101,9 @@ if (batsman === "Data Not Found") {
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="px-6 py-0">Batsman</th>
-              <th className="px-4 py-0">R(B)</th>
-              <th className="px-4 py-0">4</th>
-              <th className="px-4 py-0">6</th>
+              <th className="px-4 py-0">Runs(Balls)</th>
+              <th className="px-4 py-0">4s</th>
+              <th className="px-4 py-0">6s</th>
               <th className="px-4 py-0">SR</th>
             </tr>
           </thead>
@@ -131,10 +131,10 @@ if (batsman === "Data Not Found") {
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="pl-6 pr-8 py-0">Bowler</th>
-              <th className="px-5 py-0">O</th>
-              <th className="px-5 py-0">R</th>
-              <th className="px-5 py-0">W</th>
-              <th className="px-5 py-0">M</th>
+              <th className="px-5 py-0">Overs</th>
+              <th className="px-5 py-0">Runs</th>
+              <th className="px-5 py-0">Wickets</th>
+              <th className="px-5 py-0">Maiden</th>
             </tr>
           </thead>
           <tbody>
