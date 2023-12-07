@@ -101,7 +101,7 @@ if (batsman === "Data Not Found") {
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="px-6 py-0">Batsman</th>
-              <th className="px-4 py-0">Runs(Balls)</th>
+              <th className="px-4 py-0">Runs(B)</th>
               <th className="px-4 py-0">4s</th>
               <th className="px-4 py-0">6s</th>
               <th className="px-4 py-0">SR</th>
@@ -157,7 +157,7 @@ if (batsman === "Data Not Found") {
       </div>
     </div>
     <div className="justify-items-start justify-center place-self-center">
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-fit place-self-center">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-52">Recent Balls: {recentballs}</p>
   </div>
   </div>
 )
@@ -190,7 +190,7 @@ setInterval(function(){
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-1">
     
-    <div className="bg-blue-100 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
+    <div className="bg-blue-700 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
       {Displayscore}
     </div>
   </div>
