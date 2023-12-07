@@ -131,26 +131,26 @@ if (batsman === "Data Not Found") {
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="pl-6 pr-8 py-0">Bowler</th>
-              <th className="px-4 py-0">Ov</th>
-              <th className="px-4 py-0">R</th>
-              <th className="px-4 py-0">W</th>
-              <th className="px-4 py-0">M Ov</th>
+              <th className="px-5 py-0">O</th>
+              <th className="px-5 py-0">R</th>
+              <th className="px-5 py-0">W</th>
+              <th className="px-5 py-0">M</th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-black">
               <td className="px-6 py-0">{"🔴 " + bowler}</td>
-              <td className="px-4 py-0">{bowlerover}</td>
-              <td className="px-4 py-0">{bowlerruns}</td>
-              <td className="px-4 py-0">{bowlerwickets}</td>
-              <td className="px-4 py-0">{bowlermaiden}</td>
+              <td className="px-5 py-0">{bowlerover}</td>
+              <td className="px-5 py-0">{bowlerruns}</td>
+              <td className="px-5 py-0">{bowlerwickets}</td>
+              <td className="px-5 py-0">{bowlermaiden}</td>
             </tr>
             <tr className="text-black">
               <td className="px-6 py-0">{bowlertwo}</td>
-              <td className="px-4 py-0">{bowletworover}</td>
-              <td className="px-4 py-0">{bowlertworuns}</td>
-              <td className="px-4 py-0">{bowlertwowickets}</td>
-              <td className="px-4 py-0">{bowlertwomaiden}</td>
+              <td className="px-5 py-0">{bowletworover}</td>
+              <td className="px-5 py-0">{bowlertworuns}</td>
+              <td className="px-5 py-0">{bowlertwowickets}</td>
+              <td className="px-5 py-0">{bowlertwomaiden}</td>
             </tr>
           </tbody>
         </table>
