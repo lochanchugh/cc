@@ -126,7 +126,8 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 pr-3 w-152">
+      <div className="text-left border-0 border-blue-500 pr-3 w-152 flex">
+  <div className="flex-1">
         <table>
           <thead>
             <tr className="text-white bg-blue-500 w-152">
@@ -155,6 +156,9 @@ if (batsman === "Data Not Found") {
           </tbody>
         </table>
       </div>
+  <div className="flex-1 border-green-50 w-15">
+  </div>
+  </div>
     </div>
     <p className="bg-blue-100 rounded-lg p-x-3 text-black border-y border-blue-500 w-35 text-left">Recent Balls: {recentballs}</p>
   
