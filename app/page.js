@@ -96,10 +96,10 @@ if (batsman === "Data Not Found") {
     </marquee>
 
     <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500 justify-items-start">
-      <div className="text-left border-0 border-blue-500">
+      <div className="text-left border-0 border-blue-500 w-152">
         <table className="w-full">
           <thead>
-            <tr className="text-white bg-blue-500 w-52">
+            <tr className="text-white bg-blue-500 w-152">
               <th className="px-6 py-0">Batsman</th>
               <th className="px-4 py-0">Runs(B)</th>
               <th className="px-4 py-0">4s</th>
@@ -126,14 +126,14 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 pr-3">
+      <div className="text-left border-0 border-blue-500 pr-3 w-152">
         <table>
           <thead>
-            <tr className="text-white bg-blue-500 w-52">
+            <tr className="text-white bg-blue-500 w-152">
               <th className="pl-6 pr-8 py-0">Bowler</th>
               <th className="px-4 py-0">Overs</th>
               <th className="px-4 py-0">Runs</th>
-              <th className="px-4 py-0">Wickets</th>
+              <th className="px-4 py-0">W</th>
               <th className="px-4 py-0">M</th>
             </tr>
           </thead>
@@ -157,7 +157,7 @@ if (batsman === "Data Not Found") {
       </div>
     </div>
     <div className="justify-items-start justify-center place-self-center">
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-52">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-150">Recent Balls: {recentballs}</p>
   </div>
   </div>
 )
