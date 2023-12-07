@@ -157,11 +157,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
   <div className="flex-1 bg-black">
-  <p>afghhggf</p>
-  <p>afghhggf</p>
-  <p>afghhggf</p>
-  <p>afghhggf</p>
-  <p>afghhggf</p>
+ 
   </div>
   </div>
     </div>
