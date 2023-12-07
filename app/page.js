@@ -86,7 +86,7 @@ if (batsman === "Data Not Found") {
     <h1 className="text-2xl text-blue-700">{title}</h1>
     
 
-    <div className="bg-orange-500 rounded-lg px-2 py-2 mb-0.5 w-fit">
+    <div className="bg-orange-500 rounded-lg px-2 py-2 mb-0.5 w-fit justify-between">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
