@@ -132,7 +132,7 @@ if (batsman === "Data Not Found") {
             <tr className="text-white bg-blue-500 w-52">
               <th className="pl-6 pr-8 py-0">Bowler</th>
               <th className="px-5 py-0">Overs</th>
-              <th className="px-5 py-0">R</th>
+              <th className="px-5 py-0">Runs</th>
               <th className="px-5 py-0">Wickets</th>
               <th className="px-5 py-0">M</th>
             </tr>
