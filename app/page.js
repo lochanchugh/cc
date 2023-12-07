@@ -95,7 +95,7 @@ if (batsman === "Data Not Found") {
       <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket} | {runrate}</p>
     </marquee>
 
-    <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500 items-left">
+    <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500 justify-items-start">
       <div className="text-left border-0 border-blue-500">
         <table className="w-full">
           <thead>
