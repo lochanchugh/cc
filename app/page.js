@@ -84,7 +84,7 @@ if (batsman === "Data Not Found") {
    Displayscore = (
   <div className="flex flex-col justify-between p-4">
     <h1 className="text-2xl text-blue-700">{title}</h1>
-    <hr className="border-blue-500 my-1" />
+    
 
     <div className="bg-orange-500 rounded-lg px-4 py-2 mb-0.5">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
@@ -99,7 +99,7 @@ if (batsman === "Data Not Found") {
       <div className="text-left border-0 border-blue-500">
         <table className="w-full">
           <thead>
-            <tr className="text-white bg-blue-500 w-36">
+            <tr className="text-white bg-blue-500 w-52">
               <th className="px-6 py-0">Batsman</th>
               <th className="px-4 py-0">R(B)</th>
               <th className="px-4 py-0">4</th>
@@ -126,7 +126,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 p-3 w-36">
+      <div className="text-left border-0 border-blue-500 p-3 w-52">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
@@ -157,7 +157,7 @@ if (batsman === "Data Not Found") {
       </div>
     </div>
 
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500 w-fit">Recent Balls: {recentballs}</p>
   </div>
 )
 }
