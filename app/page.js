@@ -86,8 +86,8 @@ if (batsman === "Data Not Found") {
     <h1 className="text-2xl text-blue-700">{title}</h1>
     
 
-    <div className="bg-orange-500 rounded-lg px-2 py-2 mb-0.5 w-fit justify-center">
-      <p className="text-4xl text-white font-bold text-center">{score}</p>
+    <div className="bg-orange-500 rounded-lg px-2 py-2 mb-0.5 w-fit justify-center place-self-center">
+      <p className="text-4xl text-white font-bold text-center ">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
@@ -157,7 +157,7 @@ if (batsman === "Data Not Found") {
       </div>
     </div>
     <div className="justify-items-start justify-center">
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500 w-fit">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500 w-fit place-self-center">Recent Balls: {recentballs}</p>
   </div>
   </div>
 )
