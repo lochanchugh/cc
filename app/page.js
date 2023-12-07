@@ -82,7 +82,7 @@ if (batsman === "Data Not Found") {
   )
 } else {
    Displayscore = (
-  <div className="flex flex-col items-center justify-between p-4">
+  <div className="flex flex-col justify-between p-4">
     <h1 className="text-2xl text-blue-700">{title}</h1>
     <hr className="border-blue-500 my-1" />
 
