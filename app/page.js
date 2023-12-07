@@ -189,7 +189,7 @@ setInterval(function(){
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-4">
     
-    <div className="bg-blue-100 rounded-lg p-6 text-center border-solid border-4 border-gray-600 w-1/2">
+    <div className="bg-blue-100 rounded-lg p-6 text-center border-solid border-4 border-gray-600 max-w-1/2">
       {Displayscore}
     </div>
   </div>
