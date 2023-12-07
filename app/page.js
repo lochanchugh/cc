@@ -99,7 +99,7 @@ if (batsman === "Data Not Found") {
       <div className="text-left border-0 border-blue-500">
         <table className="w-full">
           <thead>
-            <tr className="text-white bg-blue-500">
+            <tr className="text-white bg-blue-500 w-36">
               <th className="px-6 py-0">Batsman</th>
               <th className="px-4 py-0">R(B)</th>
               <th className="px-4 py-0">4</th>
@@ -126,7 +126,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 p-3">
+      <div className="text-left border-0 border-blue-500 p-3 w-36">
         <table className="w-full">
           <thead>
             <tr className="text-white bg-blue-500">
