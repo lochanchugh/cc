@@ -87,12 +87,12 @@ if (batsman === "Data Not Found") {
     
 
     <div className="bg-orange-500 rounded-lg px-2 py-2 mb-0.5 w-fit justify-center place-self-center">
-      <p className="text-4xl text-white font-bold text-center ">{score}</p>
+      <p className="text-4xl text-white font-bold text-center ">{score}<sub class="font-features subs">{runrate}</sub></p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
     <marquee className="w-fit">
-      <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket} </p>
+      <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket}   |   {runrate}</p>
     </marquee>
 
     <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500 justify-items-start">
@@ -156,7 +156,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
     </div>
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-35 text-left">Recent Balls: {recentballs}  |   {runrate}</p>
+    <p className="bg-blue-100 rounded-lg p-x-3 text-black border-y border-blue-500 w-35 text-left">Recent Balls: {recentballs}</p>
   
   </div>
 )
@@ -189,7 +189,7 @@ setInterval(function(){
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-1">
     
-    <div className="bg-[#ffff00]-800 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
+    <div className="bg-[#ffff32] rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
       {Displayscore}
     </div>
   </div>
