@@ -94,8 +94,8 @@ if (batsman === "Data Not Found") {
     <marquee className="w-fit">
       <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket}   |   {runrate}</p>
     </marquee>
-
-    <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500 justify-items-start">
+    <div className="flex">
+    <div className="grid grid-cols-1 gap-0 mt-0.5 border-0 border-blue-500 justify-items-start flex-1">
       <div className="text-left border-0 border-blue-500 w-152">
         <table className="w-full">
           <thead>
@@ -126,8 +126,8 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 pr-3 w-152 flex">
-  <div className="flex-1">
+      <div className="text-left border-0 border-blue-500 pr-3 w-152">
+
         <table>
           <thead>
             <tr className="text-white bg-blue-500 w-152">
