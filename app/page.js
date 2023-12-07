@@ -157,7 +157,7 @@ if (batsman === "Data Not Found") {
       </div>
     </div>
 
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500 w-fit text-center">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-center-black border-b border-blue-500 w-fit">Recent Balls: {recentballs}</p>
   </div>
 )
 }
