@@ -108,14 +108,14 @@ if (batsman === "Data Not Found") {
             </tr>
           </thead>
           <tbody>
-            <tr className="text-black">
+            <tr className="text-black w-152">
               <td className="px-6 py-0">{"🏏" + batsman}</td>
               <td className="px-4 py-0">{batsmanrun}</td>
               <td className="px-4 py-0">{fours}</td>
               <td className="px-4 py-0">{sixes}</td>
               <td className="px-4 py-0">{sr}</td>
             </tr>
-            <tr className="text-black">
+            <tr className="text-black w-152">
               <td className="px-6 py-0">{batsmantwo}</td>
               <td className="px-4 py-0">{batsmantworun}</td>
               <td className="px-4 py-0">{batsmantwofours}</td>
@@ -138,14 +138,14 @@ if (batsman === "Data Not Found") {
             </tr>
           </thead>
           <tbody>
-            <tr className="text-black">
+            <tr className="text-black w-152">
               <td className="px-6 py-0">{"🔴 " + bowler}</td>
               <td className="px-4 py-0">{bowlerover}</td>
               <td className="px-4 py-0">{bowlerruns}</td>
               <td className="px-4 py-0">{bowlerwickets}</td>
               <td className="px-4 py-0">{bowlermaiden}</td>
             </tr>
-            <tr className="text-black">
+            <tr className="text-black w-152">
               <td className="px-6 py-0">{bowlertwo}</td>
               <td className="px-4 py-0">{bowletworover}</td>
               <td className="px-4 py-0">{bowlertworuns}</td>
@@ -156,9 +156,8 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
     </div>
-    <div className="justify-items-start justify-center place-self-center">
     <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-150">Recent Balls: {recentballs}</p>
-  </div>
+  
   </div>
 )
 }
@@ -190,7 +189,7 @@ setInterval(function(){
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-1">
     
-    <div className="bg-blue-700 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
+    <div className="bg-yellow-200 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
       {Displayscore}
     </div>
   </div>
