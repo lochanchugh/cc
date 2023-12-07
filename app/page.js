@@ -82,16 +82,16 @@ if (batsman === "Data Not Found") {
   )
 } else {
    Displayscore = (
-  <div className="flex flex-col justify-between p-4">
+  <div className="flex flex-col justify-between p-2">
     <h1 className="text-2xl text-blue-700">{title}</h1>
     
 
-    <div className="bg-orange-500 rounded-lg px-4 py-2 mb-0.5">
+    <div className="bg-orange-500 rounded-lg px-2 py-2 mb-0.5">
       <p className="text-4xl text-white font-bold text-center">{score}</p>
       <p className="text-lg text-center text-blue-800">{update}</p>
     </div>
 
-    <marquee className="w-3/4">
+    <marquee className="w-fit">
       <p className="text-black text-sm">Partnership: {partnership} | Last Wicket:  {lastwicket} | {runrate}</p>
     </marquee>
 
@@ -131,33 +131,34 @@ if (batsman === "Data Not Found") {
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="pl-6 pr-8 py-0">Bowler</th>
-              <th className="px-5 py-0">Overs</th>
-              <th className="px-5 py-0">Runs</th>
-              <th className="px-5 py-0">Wickets</th>
-              <th className="px-5 py-0">M</th>
+              <th className="px-4 py-0">Overs</th>
+              <th className="px-4 py-0">Runs</th>
+              <th className="px-4 py-0">Wickets</th>
+              <th className="px-4 py-0">M</th>
             </tr>
           </thead>
           <tbody>
             <tr className="text-black">
               <td className="px-6 py-0">{"🔴 " + bowler}</td>
-              <td className="px-5 py-0">{bowlerover}</td>
-              <td className="px-5 py-0">{bowlerruns}</td>
-              <td className="px-5 py-0">{bowlerwickets}</td>
-              <td className="px-5 py-0">{bowlermaiden}</td>
+              <td className="px-4 py-0">{bowlerover}</td>
+              <td className="px-4 py-0">{bowlerruns}</td>
+              <td className="px-4 py-0">{bowlerwickets}</td>
+              <td className="px-4 py-0">{bowlermaiden}</td>
             </tr>
             <tr className="text-black">
               <td className="px-6 py-0">{bowlertwo}</td>
-              <td className="px-5 py-0">{bowletworover}</td>
-              <td className="px-5 py-0">{bowlertworuns}</td>
-              <td className="px-5 py-0">{bowlertwowickets}</td>
-              <td className="px-5 py-0">{bowlertwomaiden}</td>
+              <td className="px-4 py-0">{bowletworover}</td>
+              <td className="px-4 py-0">{bowlertworuns}</td>
+              <td className="px-4 py-0">{bowlertwowickets}</td>
+              <td className="px-4 py-0">{bowlertwomaiden}</td>
             </tr>
           </tbody>
         </table>
       </div>
     </div>
-
-    <p className="bg-blue-100 rounded-lg p-1 text-center-black border-b border-blue-500 w-fit">Recent Balls: {recentballs}</p>
+    <div className="justify-items-start">
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500 w-fit">Recent Balls: {recentballs}</p>
+  </div>
   </div>
 )
 }
