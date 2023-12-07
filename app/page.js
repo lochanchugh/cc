@@ -134,7 +134,7 @@ if (batsman === "Data Not Found") {
               <th className="px-4 py-0">Overs</th>
               <th className="px-4 py-0">Runs</th>
               <th className="px-4 py-0">W</th>
-              <th className="px-4 py-0">M</th>
+              <th className="px-4 py-0">Maiden</th>
             </tr>
           </thead>
           <tbody>
@@ -156,7 +156,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
     </div>
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-150">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-90">Recent Balls: {recentballs}</p>
   
   </div>
 )
