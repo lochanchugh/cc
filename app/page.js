@@ -156,7 +156,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
     </div>
-    <div className="justify-items-start">
+    <div className="justify-items-start justify-between">
     <p className="bg-blue-100 rounded-lg p-1 text-black border-b border-blue-500 w-fit">Recent Balls: {recentballs}</p>
   </div>
   </div>
