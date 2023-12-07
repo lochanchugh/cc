@@ -156,7 +156,7 @@ if (batsman === "Data Not Found") {
           </tbody>
         </table>
       </div>
-  <div className="flex-1 border-green-50 w-12 h-12">
+  <div className="flex-1 bg-black">
   <p>afghhggf</p>
   <p>afghhggf</p>
   <p>afghhggf</p>
