@@ -126,15 +126,15 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
 
-      <div className="text-left border-0 border-blue-500 p-3">
+      <div className="text-left border-0 border-blue-500 pr-3">
         <table>
           <thead>
             <tr className="text-white bg-blue-500 w-52">
               <th className="pl-6 pr-8 py-0">Bowler</th>
               <th className="px-5 py-0">Overs</th>
-              <th className="px-5 py-0">Runs</th>
+              <th className="px-5 py-0">R</th>
               <th className="px-5 py-0">Wickets</th>
-              <th className="px-5 py-0">Maiden</th>
+              <th className="px-5 py-0">M</th>
             </tr>
           </thead>
           <tbody>
