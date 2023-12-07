@@ -132,7 +132,7 @@ if (batsman === "Data Not Found") {
             <tr className="text-white bg-blue-500 w-152">
               <th className="pl-6 pr-8 py-0">Bowler</th>
               <th className="px-4 py-0">Overs</th>
-              <th className="px-4 py-0">Runs</th>
+              <th className="px-4 py-0">Run</th>
               <th className="px-4 py-0">W</th>
               <th className="px-4 py-0">Maiden</th>
             </tr>
@@ -156,7 +156,7 @@ if (batsman === "Data Not Found") {
         </table>
       </div>
     </div>
-    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-90">Recent Balls: {recentballs}</p>
+    <p className="bg-blue-100 rounded-lg p-1 text-black border-y border-blue-500 w-58">Recent Balls: {recentballs}</p>
   
   </div>
 )
@@ -189,7 +189,7 @@ setInterval(function(){
 return (
   <div className="min-h-screen bg-blue-50 dark:bg-blue-100 flex flex-col justify-between p-1">
     
-    <div className="bg-yellow-200 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
+    <div className="bg-yellow-100 rounded-lg p-1 text-center border-solid border-4 border-gray-600 w-1/2">
       {Displayscore}
     </div>
   </div>
